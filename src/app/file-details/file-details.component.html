@@ -1,0 +1,6 @@
+<div>
+  <h3>File Details</h3>
+  <p>Name: {{ fileName }}</p>
+  <p *ngIf="metadata">Metadata: {{ metadata | json }}</p>
+  <p *ngIf="fileContent">Content loaded</p>
+</div>
