@@ -1,1 +1,9 @@
-<p>file-delete works!</p>
+<div>
+  <h3>Delete File</h3>
+  <ul>
+    <li *ngFor="let file of files">
+      {{ file }}
+      <button (click)="onDelete(file)">Delete</button>
+    </li>
+  </ul>
+</div>

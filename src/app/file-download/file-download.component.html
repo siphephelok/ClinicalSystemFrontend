@@ -1,1 +1,9 @@
-<p>file-download works!</p>
+<div>
+  <h3>Download File</h3>
+  <ul>
+    <li *ngFor="let file of files">
+      {{ file }}
+      <button (click)="onDownload(file)">Download</button>
+    </li>
+  </ul>
+</div>
